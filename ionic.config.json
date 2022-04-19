@@ -1,0 +1,7 @@
+{
+  "name": "app-theme",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

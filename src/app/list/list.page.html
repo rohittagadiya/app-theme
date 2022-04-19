@@ -1,0 +1,32 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+
+<div class="main-wrapper">
+    <ion-item lines="none" class="mt-2" style="--background: #eaeaea;">
+        <ion-avatar slot="start">
+            <img src="https://i.pravatar.cc/150?img=59">
+        </ion-avatar>
+        <ion-label>Williem Sam</ion-label>
+    </ion-item>
+    <div class="py-2 c-c-wrapper">
+        <ion-item *ngFor="let message of getMessages()" [routerLink]="'/message/' + message.id" [detail]="false" lines="none">
+            <ion-avatar slot="start">
+                <img [src]="message.dp">
+            </ion-avatar>
+            <!-- <ion-icon name="person" slot="start">
+            </ion-icon> -->
+            <ion-label>
+                <h2>{{ message.fromName }}</h2>
+                <p>{{ message.subject }}</p>
+            </ion-label>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-item>
+    </div>
+</div>

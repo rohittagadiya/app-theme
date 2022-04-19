@@ -1,0 +1,25 @@
+ion-header,
+ion-toolbar {
+    --background: #eaeaea;
+}
+
+ion-header::after {
+    background: none !important;
+}
+
+super-tabs-toolbar {
+    background-color: #eaeaea;
+    /* box-shadow: none; */
+    color: #a0a0a0;
+    // max-width: 400px;
+    margin: auto;
+    --st-indicator-height: 0px;
+    super-tab-button.active {
+        color: black;
+    }
+}
+
+super-tabs-toolbar::after {
+    background: none !important;
+    height: 0px;
+}
